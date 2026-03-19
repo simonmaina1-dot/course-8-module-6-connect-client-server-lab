@@ -1,5 +1,4 @@
 from flask import Flask, request, jsonify
->>>>>>> feature-connect-frontend
 from flask_cors import CORS
 
 app = Flask(__name__)
@@ -22,7 +21,6 @@ CORS(app)
 # 3. Create a new event with a unique ID and the provided title
 # 4. Add the new event to the events list
 # 5. Return the new event with status code 201
-=======
 app = Flask(__name__)
 
 events = [
@@ -47,11 +45,9 @@ def add_event():
     new_event = {"id": new_id, "title": data["title"]}
     events.append(new_event)
     return jsonify(new_event), 201
->>>>>>> feature-connect-frontend
 
 if __name__ == "__main__":
     app.run(debug=True)
-=======
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 
@@ -83,9 +79,7 @@ def add_event():
 
 if __name__ == "__main__":
     app.run(debug=True)
-=======
 from flask import Flask, request, jsonify
->>>>>>> feature-connect-frontend
 from flask_cors import CORS
 
 app = Flask(__name__)
@@ -108,7 +102,6 @@ CORS(app)
 # 3. Create a new event with a unique ID and the provided title
 # 4. Add the new event to the events list
 # 5. Return the new event with status code 201
-=======
 app = Flask(__name__)
 
 events = [
@@ -133,7 +126,6 @@ def add_event():
     new_event = {"id": new_id, "title": data["title"]}
     events.append(new_event)
     return jsonify(new_event), 201
->>>>>>> feature-connect-frontend
 
 if __name__ == "__main__":
     app.run(debug=True)
