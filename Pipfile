@@ -3,12 +3,29 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 name = "pypi"
 
+
+[dev-packages]
+flask-cors = "*"
+>>>>>>> feature-connect-frontend
+
+[requires]
+python_version = "3.12"
+=======
 [packages]
 flask = "*"
 pytest = "*"
 flask-cors = "*"
 
 [dev-packages]
+flask-cors = "*"
+
+[requires]
+python_version = "3.12"
+=======
+
+[dev-packages]
+flask-cors = "*"
+>>>>>>> feature-connect-frontend
 
 [requires]
 python_version = "3.12"
